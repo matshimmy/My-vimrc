@@ -51,8 +51,13 @@ imap <leader>ci <plug>NERDCommenterInsert
 set number
 
 set hlsearch
-set background=dark
+set background=light
 map <F9> :noh<CR>
 map <F2> :tabe ~/.vimrc<CR>
 map <F3> :w<CR>
 imap <F3> <ESC>:w<CR>
+
+
+"fix backspace problems
+set backspace=2 " make backspace work like most other apps
+set backspace=indent,eol,start
